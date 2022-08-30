@@ -23,7 +23,7 @@ function Home() {
       {characters &&
         characters.map((item) => (
           <StructureCard
-            // page="/characters/"
+            page="/characters/"
             id={item.id}
             key={item.id}
             img={`${item.thumbnail.path}.${item.thumbnail.extension}`}
@@ -34,5 +34,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;
